@@ -17,6 +17,7 @@ pick a project name
 cd my-project //project name folder
 
 npm install
+
 npm run dev
 
 ### URL
