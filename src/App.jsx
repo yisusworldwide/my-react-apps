@@ -9,7 +9,12 @@ function App() {
   return (
     <>
       <Form/>
-      <div><Clicker/></div>
+      <div>
+        <Clicker message="don't touch me mfucker" buttonText="dare you"/>
+        <Clicker message="not caring what you do" buttonText="whatever"/>
+        <Clicker message="touch me again baby!" buttonText="horny here"/>
+      </div>
+
 
       {/* <div className="card">
         
