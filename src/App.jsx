@@ -1,8 +1,9 @@
-import './App.css'
-import Clicker from './Clicker.jsx'
-import Form from './Form.jsx'
-import Counter from './Counter.jsx'
-import ColorBoxGrid from './ColorBoxGrid'
+import './App.css';
+import Clicker from './Clicker.jsx';
+import Form from './Form.jsx';
+import Counter from './Counter.jsx';
+import ColorBox from './Colorbox.jsx'
+//import ColorBoxGrid from './ColorBoxGrid';
 
 // Array containing colors
 const colors = [
@@ -28,11 +29,9 @@ function App() {
 
   return (
     <>
-      <Counter />
+      
       <div>
-        {/* <Clicker message="don't touch me mfucker" buttonText="dare you"/>
-        <Clicker message="not caring what you do" buttonText="whatever"/>
-        <Clicker message="touch me again baby!" buttonText="horny here"/> */}
+      <ColorBox />
       </div>
 
     </>

@@ -9,5 +9,6 @@ function randomChoice(arr) {
 
 export default function ColorBox(){
 
+  return <div className="ColorBox" style={{backgroundColor:"orange"}}></div>
 
 }

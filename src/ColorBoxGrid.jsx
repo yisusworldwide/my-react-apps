@@ -1,6 +1,2 @@
-import ColorBoxGrid from './ColorBoxGrid.css'
+import "./ColorBoxGrid.css"
 
-export default function ColorBoxGrid(){
-
-
-}
