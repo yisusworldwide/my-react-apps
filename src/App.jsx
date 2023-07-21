@@ -31,7 +31,7 @@ function App() {
     <>
       
       <div>
-      <ColorBox />
+      <ColorBox colors ={colors}  />
       </div>
 
     </>
