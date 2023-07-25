@@ -9,7 +9,7 @@ import "./ColorBox.css";
 
 export default function ColorBox({colors}){
   //we employ "useState" to update the state of our object
-  const [color, setColor] = useState ("green");
+  const [color, setColor] = useState ("grey");
   //write a function using former one "randomChoice" to change colors from the array
   const changeColor = () => {
     const idx = Math.floor(Math.random() * colors.length);
