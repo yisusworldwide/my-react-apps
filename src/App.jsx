@@ -1,7 +1,7 @@
 import './App.css';
-import Clicker from './Clicker.jsx';
-import Form from './Form.jsx';
-import Counter from './Counter.jsx';
+// import Clicker from './Clicker.jsx';
+// import Form from './Form.jsx';
+// import Counter from './Counter.jsx';
 //import ColorBox from './Colorbox.jsx'
 import ColorBoxGrid from './ColorBoxGrid';
 
