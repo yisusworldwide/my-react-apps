@@ -2,8 +2,8 @@ import './App.css';
 import Clicker from './Clicker.jsx';
 import Form from './Form.jsx';
 import Counter from './Counter.jsx';
-import ColorBox from './Colorbox.jsx'
-//import ColorBoxGrid from './ColorBoxGrid';
+//import ColorBox from './Colorbox.jsx'
+import ColorBoxGrid from './ColorBoxGrid';
 
 // Array containing colors
 const colors = [
@@ -31,7 +31,7 @@ function App() {
     <>
       
       <div>
-      <ColorBox colors ={colors}  />
+      <ColorBoxGrid colors ={colors}  />
       </div>
 
     </>
