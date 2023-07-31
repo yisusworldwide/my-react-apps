@@ -7,6 +7,7 @@ function randomChoice(arr) {
     return arr[idx];
   }
 
+//in our function we are using the variable "colors" from the array in App.jsx  
 export default function ColorBox({ colors }){
   //we employ "useState" to update the state of our object
   const [color, setColor] = useState (randomChoice(colors));
@@ -21,12 +22,14 @@ export default function ColorBox({ colors }){
   //we return our component styled upon a variable color we have set
   return (
     <div 
+      //for the css to be working
       className="ColorBox" 
+      //to trigger the logic due clicking
       onClick={changeColor}
+      //apply the first argument before we "setColor" it
       style={{backgroundColor:color}}
     ></div>
 
   )
-  
 
 }
