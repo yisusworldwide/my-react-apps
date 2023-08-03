@@ -1,7 +1,8 @@
 import './App.css';
 
 //import ColorBoxGrid from './ColorBoxGrid';
-import PropertyList from "./PropertyList";
+import Property from "./Property.jsx";
+//import PropertyList from "./PropertyList";
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -38,7 +39,7 @@ function App() {
     <>
       
       <div>
-      
+        <Property />
       </div>
 
     </>
