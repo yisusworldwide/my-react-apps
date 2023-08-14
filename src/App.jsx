@@ -1,7 +1,6 @@
 import './App.css';
 
-//import PropertyList from "./PropertyList.jsx";
-import DoubleDice from "./DoubleDice"
+import FlipCoin from "./FlipCoin";
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -38,7 +37,7 @@ function App() {
     <>
       
       <div>
-        <DoubleDice />
+        <FlipCoin />
       </div>
 
     </>
