@@ -8,7 +8,7 @@ function App() {
     <>
       
       <div>
-        <ScoreKeeper />
+        <ScoreKeeper numPlayers={4} target={7} />
       </div>
 
     </>
