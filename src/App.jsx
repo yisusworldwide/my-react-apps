@@ -1,6 +1,21 @@
 import './App.css';
 
-import FlipCoin from "./FlipCoin";
+import ScoreKeeper from "./ScoreKeeper";
+
+function App() {
+
+  return (
+    <>
+      
+      <div>
+        <ScoreKeeper />
+      </div>
+
+    </>
+  );
+}
+
+export default App
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -30,18 +45,3 @@ import FlipCoin from "./FlipCoin";
 //   "#FF9800",
 //   "#FF5722",
 // ];
-
-function App() {
-
-  return (
-    <>
-      
-      <div>
-        <FlipCoin />
-      </div>
-
-    </>
-  );
-}
-
-export default App
