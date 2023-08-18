@@ -3,12 +3,14 @@ import { useState } from "react";
 export default function ScoreKeeper({ numPlayers=0, target=0 }){
     const [scores, setScores] = useState(new Array(numPlayers).fill(0));
     const incrementScore = (idx) => {
-        setScores((prevScores) =>{
-            const copy = [...prevScores];
-            copy[idx] += 1;
-            return copy;
-        })
+        setScores((prevScores) => {
+            return prevScores.map((score, i) => {
+                if (i === idx) return score +1;
+                return score;
+            });
+        });
     }
+    
     return (
         <div>
             <h2>Score Keeper</h2>
