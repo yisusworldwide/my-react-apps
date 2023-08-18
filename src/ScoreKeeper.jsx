@@ -9,9 +9,15 @@ export default function ScoreKeeper({ numPlayers=0, target=0 }){
                 return score;
             });
         });
+        
     }
-    
+
+    const resetScores = () => {
+        setScores(new Array(numPlayers).fill(0));    
+    } 
+
     return (
+        
         <div>
             <h2>Score Keeper</h2>
             <ul>
@@ -26,6 +32,7 @@ export default function ScoreKeeper({ numPlayers=0, target=0 }){
                     );
                 })}
             </ul>
+            <button onClick={resetScores}>Reset Scores</button>
         </div>
     );
 
