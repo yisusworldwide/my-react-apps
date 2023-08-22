@@ -23,8 +23,10 @@ export default function ScoreKeeper({ numPlayers=4, target=7 }){
             <ul>
                 {
                     scores.map((score, idx) => {
+                        const isWinner = score === target;
+                        const styles = {color: isWinner ? "#32de84" : ""}; 
                         return (
-                        <li key={idx}>
+                        <li style={styles} key={idx}>
                             Player {idx + 1} score: {score}
                             <button onClick = {() => incrementScore(idx)}>+1</button>
                             { score === target && <h3>Winner!!!</h3> }
