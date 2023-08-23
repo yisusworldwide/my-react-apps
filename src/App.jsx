@@ -1,5 +1,5 @@
 import './App.css';
-
+import RatingDemo from './RatingDemo';
 import ScoreKeeper from "./ScoreKeeper";
 
 function App() {
@@ -7,8 +7,12 @@ function App() {
   return (
     <>
       
-      <div>
+      {/* <div>
         <ScoreKeeper numPlayers={5} target={7} />
+      </div> */}
+
+      <div>
+        <RatingDemo />
       </div>
 
     </>
