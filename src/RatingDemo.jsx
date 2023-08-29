@@ -3,22 +3,6 @@ import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import StarIcon from '@mui/icons-material/Star';
 
-// export default function RatingDemo(){
-//     const [score, setScore] = useState(2);
-//     return (
-//         <div>
-//             <h1>Rating Demo. Current Score: {score}</h1>
-//             <Rating
-//             name="simple-controlled"
-//             value={score}
-//             onChange={(event, newValue) => {
-//             setScore(newValue);
-//             }}
-//             />
-//         </div>
-//     );
-// }
-
 const labels = {
     0.5: 'Useless',
     1: 'Useless+',
