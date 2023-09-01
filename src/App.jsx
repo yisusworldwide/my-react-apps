@@ -2,12 +2,17 @@ import './App.css';
 import RatingDemo from './RatingDemo';
 import ScoreKeeper from "./ScoreKeeper";
 import PropertyList from "./PropertyList";
+import CustomSvgIcon from "./CustomSvgIcon";
 
 function App() {
 
   return (
     <>
+      <section>
+        <CustomSvgIcon />
+      </section>
       
+
       {/* <div>
         <ScoreKeeper numPlayers={5} target={7} />
       </div> */}
