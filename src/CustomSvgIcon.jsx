@@ -11,7 +11,7 @@ function HomeIcon(props) {
 
 export default function CustomSvgIcon (){
     return (
-        <div
+        <div className = "CustomSvgIcon"
       sx={{
         '& > :not(style)': {
           m: 2,
