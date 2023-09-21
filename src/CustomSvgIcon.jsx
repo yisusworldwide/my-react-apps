@@ -1,4 +1,4 @@
-import { indigo } from '@mui/material/colors';
+import { deepPurple } from '@mui/material/colors';
 import SvgIcon from '@mui/material/SvgIcon';
 
 function HomeIcon(props) {
@@ -24,7 +24,7 @@ export default function CustomSvgIcon (){
       <HomeIcon color="success" />
       <HomeIcon color="action" />
       <HomeIcon color="disabled" /> */}
-      <HomeIcon sx={{ color: indigo[300], fontSize: 50 }} />
+      <HomeIcon sx={{ color: deepPurple[300], fontSize: 50 }} />
     </div>
     );
 }
