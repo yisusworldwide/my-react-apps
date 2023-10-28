@@ -18,6 +18,19 @@ export default function TodoList(){
       });
     };
 
+    const toggleTodo = (id) => {
+      setTodos(prevTodos => {
+        return prevTodos.map(todo => {
+          if(todo.id === id){
+            //we're returning all the id's unchanged but the one we clicked
+            return {...todo, completed: !todo.completed}
+          } else {
+            return todo;
+          }
+        })
+      })
+    }
+
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map((todo)=> ( 
@@ -25,6 +38,7 @@ export default function TodoList(){
                   todo={todo} 
                   key={todo.id}
                   remove={removeTodo}
+                  toggle={() => toggleTodo(todo.id)}
                 />
           ) ) }
       
