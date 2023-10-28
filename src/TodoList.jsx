@@ -9,8 +9,8 @@ import CommentIcon from '@mui/icons-material/Comment';
 import { useState } from 'react';
 const initialTodos = [
     {id: 1, text: "do the workout", completed: true},
-    {id: 3, text: "shake the sardin", completed: false},
-    {id: 5, text: "expel the poison", completed: true},
+    {id: 3, text: "read the emails", completed: true},
+    {id: 5, text: "customers' meetings", completed: false},
     {id: 7, text: "go sleep early", completed: false},
 ] 
 

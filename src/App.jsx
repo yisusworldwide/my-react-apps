@@ -10,7 +10,9 @@ function App() {
   return (
     <>
       <section>
-        <CustomSvgIcon />
+        {/* <CustomSvgIcon /> */}
+
+        <TodoList />
       </section>
       
 
@@ -18,9 +20,9 @@ function App() {
         <ScoreKeeper numPlayers={5} target={7} />
       </div> */}
 
-      <div>
+      {/* <div>
         <PropertyList properties={properties} />
-      </div>
+      </div> */}
 
     </>
   );
