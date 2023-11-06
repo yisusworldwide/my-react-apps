@@ -12,13 +12,14 @@ const initialTodos = [
 
 export default function TodoList(){
     const [todos, setTodos] = useState(initialTodos);
+    //funtion to REMOVE todos
     const removeTodo = (id) => {
       setTodos(prevTodos => {
         //we return all the todos which "id" are different from the one given as argument above
         return prevTodos.filter((t) => t.id != id);
       });
     };
-
+    //function to change from true to false and likewise 
     const toggleTodo = (id) => {
       setTodos(prevTodos => {
         return prevTodos.map(todo => {
@@ -32,18 +33,28 @@ export default function TodoList(){
       })
     }
 
+    const addTodo = (text) => {
+      setTodos ((prevTodos) => {
+
+        return [...prevTodos, {text:text, id:9, completed: false}];
+        }
+      );
+    }
+    //returns the original list giving the above hardcoded todos
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map((todo)=> ( 
                 <TodoItem 
                   todo={todo} 
                   key={todo.id}
+                  //try to remove item with this variable commented out
                   remove={removeTodo}
                   toggle={() => toggleTodo(todo.id)}
+                  // addTodo={addTodo} try to explain why here NOT working
                 />
           ) ) }
           
-          <TodoForm />
+          <TodoForm addTodo={addTodo}/> 
       
         </List>
     );
