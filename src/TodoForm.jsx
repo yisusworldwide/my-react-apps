@@ -22,14 +22,19 @@ export default function TodoForm ({ addTodo }){
     return(
         <ListItem>
             <form onSubmit={handleSubmit}>
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={handleChange} value={text} 
-                    InputProps = {{
-                        endAdornment:
-                            <InputAdornment position="end">
-                            <IconButton aria-label="create todo" edge="end" type="submit">
-                                <Create />
-                            </IconButton>
-                            </InputAdornment>
+                <TextField 
+                    id="outlined-basic" 
+                    label="Outlined" 
+                    variant="outlined" 
+                    onChange={handleChange} 
+                    value={text} 
+                        InputProps = {{
+                            endAdornment:
+                                <InputAdornment position="end">
+                                <IconButton aria-label="create todo" edge="end" type="submit">
+                                    <Create />
+                                </IconButton>
+                                </InputAdornment>
                     }}
                 />
             </form> 
