@@ -42,10 +42,3 @@ export default function TodoForm ({ addTodo }){
     );
 
 }
-
-{/* <OutlinedInput
-            id="outlined-adornment-password"
-            type={showPassword ? 'text' : 'password'}
-            
-            label="Password"
-    /> */}
