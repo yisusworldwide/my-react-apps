@@ -11,10 +11,6 @@ export default function TodoItem ({todo, remove, toggle}){
     const removeTodo = () => {
         remove(todo.id);
     }
-    //check why this function is not needed, different from "remove" function
-    // const toggle = () => {
-    //     toggle(todo.id);
-    // }
     
     return (
         <ListItem
