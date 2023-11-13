@@ -5,14 +5,15 @@ import TodoForm from "./TodoForm";
 
 const initialTodos = [
     {id: 1, text: "do the workout", completed: false},
-    {id: 3, text: "read the emails", completed: true},
+    {id: 3, text: "read the emails", completed: false},
     {id: 5, text: "customers' meetings", completed: false},
-    {id: 7, text: "go sleep early", completed: false},
+    {id: 7, text: "attend remaining tasks", completed: false},
+    {id: 9, text: "go sleep early", completed: false},
 ] 
 
 export default function TodoList(){
     const [todos, setTodos] = useState(initialTodos);
-    //funtion to REMOVE todos
+    //function to REMOVE todos
     const removeTodo = (id) => {
       setTodos(prevTodos => {
         //we return all the todos which "id" are different from the one given as argument above
@@ -36,7 +37,7 @@ export default function TodoList(){
     const addTodo = (text) => {
       setTodos ((prevTodos) => {
 
-        return [...prevTodos, {text:text, id:9, completed: false}];
+        return [...prevTodos, {text:text, id:11, completed: false}];
         }
       );
     }
