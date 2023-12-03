@@ -3,16 +3,22 @@ import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 
-const initialTodos = [
-    {id: 1, text: "do the workout", completed: false},
-    {id: 3, text: "read the emails", completed: false},
-    {id: 5, text: "customers' meetings", completed: false},
-    {id: 7, text: "attend remaining tasks", completed: false},
-    {id: 9, text: "go sleep early", completed: false},
-] 
+// const initialTodos = [
+//     {id: 1, text: "do the workout", completed: false},
+//     {id: 3, text: "read the emails", completed: false},
+//     {id: 5, text: "customers' meetings", completed: false},
+//     {id: 7, text: "attend remaining tasks", completed: false},
+//     {id: 9, text: "go sleep early", completed: false},
+// ] 
+
+const getInitialData = () => {
+  const data = JSON.parse(localStorage.getItem("todos"));
+  if (!data) return [];
+  return data;
+};
 
 export default function TodoList(){
-    const [todos, setTodos] = useState(initialTodos);
+    const [todos, setTodos] = useState(getInitialData);
 
     useEffect(() => {
       localStorage.setItem(
