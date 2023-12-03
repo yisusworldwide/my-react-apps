@@ -1,5 +1,5 @@
 import List from '@mui/material/List';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 
@@ -13,6 +13,13 @@ const initialTodos = [
 
 export default function TodoList(){
     const [todos, setTodos] = useState(initialTodos);
+
+    useEffect(() => {
+      localStorage.setItem(
+        'todos',
+        JSON.stringify(todos)
+      )}, [todos])
+
     //function to REMOVE todos
     const removeTodo = (id) => {
       setTodos(prevTodos => {
