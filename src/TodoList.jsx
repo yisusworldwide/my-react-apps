@@ -11,6 +11,7 @@ import TodoForm from "./TodoForm";
 //     {id: 9, text: "go sleep early", completed: false},
 // ] 
 
+//we can erase all our entries in the form by "localStorage.clear()" in the console in Chrome
 const getInitialData = () => {
   const data = JSON.parse(localStorage.getItem("todos"));
   if (!data) return [];
