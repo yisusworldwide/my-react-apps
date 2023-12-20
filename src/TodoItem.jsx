@@ -16,8 +16,8 @@ export default function TodoItem ({todo, remove, toggle}){
     return (
         <ListItem
           secondaryAction={
-            <IconButton edge="end" aria-label="comments" onClick={removeTodo}>
-              <DeleteIcon />
+            <IconButton size="large" edge="end" aria-label="comments" onClick={removeTodo}>
+              <DeleteIcon fontSize="inherit" />
             </IconButton>
           }
           disablePadding
