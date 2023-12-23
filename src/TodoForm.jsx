@@ -28,14 +28,14 @@ export default function TodoForm ({ addTodo }){
                     variant="outlined" 
                     onChange={handleChange} 
                     value={text} 
-                        InputProps = {{
-                            endAdornment:
-                                <InputAdornment position="end">
-                                <IconButton aria-label="create todo" edge="end" type="submit">
-                                    <Create />
-                                </IconButton>
-                                </InputAdornment>
-                    }}
+                    InputProps = {{
+                        endAdornment:
+                            <InputAdornment position="end">
+                            <IconButton aria-label="create todo" edge="end" type="submit">
+                                <Create />
+                            </IconButton>
+                            </InputAdornment>
+                    }   }
                 />
             </form> 
         </ListItem>

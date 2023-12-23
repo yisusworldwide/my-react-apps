@@ -15,7 +15,7 @@ export default function TodoItem ({todo, remove, toggle}){
     return (
         <ListItem
           secondaryAction={
-            <IconButton size="large" edge="end" aria-label="comments" onClick={removeTodo}>
+            <IconButton size="large" color="warning" edge="end" aria-label="comments" onClick={removeTodo}>
               <DeleteIcon fontSize="inherit" />
             </IconButton>
           }
@@ -30,9 +30,11 @@ export default function TodoItem ({todo, remove, toggle}){
                 disableRipple
                 inputProps={{ 'aria-labelledby': labelId }}
                 onChange={toggle}
+                //size="large"
               />
             </ListItemIcon>
-            <ListItemText id={labelId} primary={todo.text} />
+            {/* we're trying to edit text font and size */}
+            <ListItemText id={labelId} primary={todo.text} variant="" />
           </ListItemButton>
         </ListItem>
     );
