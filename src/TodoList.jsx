@@ -2,6 +2,8 @@ import List from '@mui/material/List';
 import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 
 // const initialTodos = [
 //     {id: 1, text: "do the workout", completed: false},
@@ -22,7 +24,7 @@ const getInitialData = () => {
 
 export default function TodoList(){
     const [todos, setTodos] = useState(getInitialData);
-
+    //we invoke localStorage through 'useEffect'
     useEffect(() => {
       localStorage.setItem(
         'todos',
