@@ -2,6 +2,7 @@ import List from '@mui/material/List';
 import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
+import NavBar from "./NavBar";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 
@@ -23,6 +24,8 @@ const getInitialData = () => {
 };
 
 export default function TodoList(){
+<NavBar />
+
     const [todos, setTodos] = useState(getInitialData);
     //we invoke localStorage through 'useEffect'
     useEffect(() => {
@@ -61,6 +64,7 @@ export default function TodoList(){
     }
     //returns the original list giving the above hardcoded todos
     return (
+      //<NavBar >
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map((todo)=> ( 
                 <TodoItem 
@@ -76,5 +80,6 @@ export default function TodoList(){
           <TodoForm addTodo={addTodo}/> 
       
         </List>
+      //</NavBar>
     );
 }
