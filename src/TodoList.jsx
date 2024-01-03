@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 import NavBar from "./NavBar";
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 
 // const initialTodos = [
 //     {id: 1, text: "do the workout", completed: false},
@@ -24,7 +22,7 @@ const getInitialData = () => {
 };
 
 export default function TodoList(){
-<NavBar />
+
 
     const [todos, setTodos] = useState(getInitialData);
     //we invoke localStorage through 'useEffect'
@@ -64,22 +62,26 @@ export default function TodoList(){
     }
     //returns the original list giving the above hardcoded todos
     return (
-      //<NavBar >
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-            {todos.map((todo)=> ( 
-                <TodoItem 
-                  todo={todo} 
-                  key={todo.id}
-                  //try to remove item with this variable commented out
-                  remove={removeTodo}
-                  toggle={() => toggleTodo(todo.id)}
-                  // addTodo={addTodo} try to explain why here NOT working
-                />
-          ) ) }
-          
-          <TodoForm addTodo={addTodo}/> 
       
-        </List>
-      //</NavBar>
+      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+        <NavBar />
+
+        {todos.map((todo)=> ( 
+              
+            <TodoItem 
+              todo={todo} 
+              key={todo.id}
+              //try to remove item with this variable commented out
+              remove={removeTodo}
+              toggle={() => toggleTodo(todo.id)}
+              // addTodo={addTodo} try to explain why here NOT working
+            />
+                
+        ) ) }
+          
+        <TodoForm addTodo={addTodo}/> 
+      
+      </List>
+    
     );
 }
