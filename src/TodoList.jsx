@@ -64,7 +64,7 @@ export default function TodoList(){
     return (
       
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-        <NavBar />
+        {/* <NavBar /> */}
 
         {todos.map((todo)=> ( 
               

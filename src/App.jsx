@@ -4,7 +4,7 @@ import ScoreKeeper from "./ScoreKeeper";
 import PropertyList from "./PropertyList";
 import CustomSvgIcon from "./CustomSvgIcon";
 import TodoList from "./TodoList";
-
+import NavBar from "./NavBar";
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
     <>
       <section>
         {/* <CustomSvgIcon /> */}
+        <NavBar />
 
         <TodoList />
       </section>
