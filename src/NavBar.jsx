@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
+import InventorySharpIcon from '@mui/icons-material/InventorySharp';
 
 export default function navBar() {
   return (
@@ -16,8 +17,13 @@ export default function navBar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
+            <InventorySharpIcon />
           </IconButton>
-          <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign:"center", fontWeight: 'bold' }}>
+          <Typography 
+            variant="h5" 
+            component="div" 
+            sx={{ flexGrow: 1, textAlign:"center", fontWeight: 'bold' }}
+          >
             Todo List
           </Typography>
         </Toolbar>
