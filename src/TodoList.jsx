@@ -2,7 +2,7 @@ import List from '@mui/material/List';
 import { useState, useEffect } from 'react';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
-import NavBar from "./NavBar";
+import {Box, Typography}  from '@mui/material';
 
 // const initialTodos = [
 //     {id: 1, text: "do the workout", completed: false},
@@ -62,9 +62,19 @@ export default function TodoList(){
     }
     //returns the original list giving the above hardcoded todos
     return (
-      
+      <Box
+        sx={{ 
+          display: "flex",
+          flexDirection:"column",
+          alignItems:"center",
+          m: 3,
+      }}
+      >
+        
+      <Typography variant="h5" color="common.green" font="bold" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontStyle: 'oblique' }}>
+            My Todo List
+      </Typography>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-        {/* <NavBar /> */}
 
         {todos.map((todo)=> ( 
               
@@ -82,6 +92,7 @@ export default function TodoList(){
         <TodoForm addTodo={addTodo}/> 
       
       </List>
+      </Box>
     
     );
 }
