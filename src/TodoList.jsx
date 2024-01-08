@@ -1,8 +1,7 @@
-import List from '@mui/material/List';
 import { useState, useEffect } from 'react';
+import {List, Box, Typography}  from '@mui/material';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
-import {Box, Typography}  from '@mui/material';
 
 // const initialTodos = [
 //     {id: 1, text: "do the workout", completed: false},

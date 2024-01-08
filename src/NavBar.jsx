@@ -1,8 +1,5 @@
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import { AppBar, Box, Toolbar, Typography, IconButton} from '@mui/material';
+
 import InventorySharpIcon from '@mui/icons-material/InventorySharp';
 
 export default function navBar() {

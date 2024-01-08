@@ -1,9 +1,8 @@
-import ListItem from '@mui/material/ListItem';
-import TextField from '@mui/material/TextField';
+import { ListItem, TextField, InputAdornment, IconButton} from '@mui/material';
+
 import { useState } from 'react';
-import InputAdornment from '@mui/material/InputAdornment';
+
 import Create from "@mui/icons-material/Create";
-import IconButton from '@mui/material/IconButton';
 
 export default function TodoForm ({ addTodo }){
     const [text, setText] = useState("");
