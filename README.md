@@ -1,8 +1,8 @@
-# my-react-apps
-This is a workspace to create and test React applications. 
+# todo-list
+This is a responsive 'Todo List' where you can add, toggle and delete todos. 
 
 ## Technical infomation
-React apps are being created with Vite.
+Todo list written in React language and created with Vite.
 https://vitejs.dev/
 
 ## Procedure 
