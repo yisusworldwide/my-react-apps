@@ -1,5 +1,5 @@
 # todo-list
-This is a responsive 'Todo List' where you can add, toggle and delete todos. 
+This is a responsive Todo List, written in ReactJS, where you can add, toggle and delete todos.
 
 ## Technical infomation
 Todo list written in React language and created with Vite.
