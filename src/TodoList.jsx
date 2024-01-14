@@ -3,14 +3,6 @@ import {List, Box, Typography}  from '@mui/material';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 
-// const initialTodos = [
-//     {id: 1, text: "do the workout", completed: false},
-//     {id: 3, text: "read the emails", completed: false},
-//     {id: 5, text: "customers' meetings", completed: false},
-//     {id: 7, text: "attend remaining tasks", completed: false},
-//     {id: 9, text: "go sleep early", completed: false},
-// ] 
-
 //by this function we request the initial data, if any
 //we can erase all our entries in the form by "localStorage.clear()" in the console in Chrome
 const getInitialData = () => {
@@ -71,7 +63,7 @@ export default function TodoList(){
       >
         
       <Typography variant="h5" color="common.green" font="bold" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontStyle: 'oblique' }}>
-            My Todo List
+            My Own Todo List
       </Typography>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
 

@@ -1,9 +1,11 @@
-# my-react-apps
-This is a workspace to create and test React applications. 
+# todo-list
+This is a responsive Todo List, written in ReactJS, where you can add, toggle and delete todos.
 
 ## Technical infomation
-React apps are being created with Vite.
+This project is created with Vite.
 https://vitejs.dev/
+
+The data is stored in LocalStorage via 'useEffect' function.
 
 ## Procedure 
 With NPM in your local console:
