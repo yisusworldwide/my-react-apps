@@ -63,7 +63,7 @@ export default function TodoList(){
       >
         
       <Typography variant="h5" color="common.green" font="bold" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontStyle: 'oblique' }}>
-            My Own Todo List
+            My Todo List
       </Typography>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
 
