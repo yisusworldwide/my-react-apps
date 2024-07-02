@@ -5,20 +5,14 @@ This is a workspace to create and test React applications.
 React apps are being created with Vite.
 https://vitejs.dev/
 
-## Procedure 
-With NPM in your local console:
+> [!TIP]
+> With NPM in your local console:
+> $npm create vite@latest
+> choose "react" from the supported template presets
+> pick a project name
+> cd my-project //project name folder
+> npm install
+> npm run dev
 
-$npm create vite@latest
-
-choose "react" from the supported template presets
-
-pick a project name
-
-cd my-project //project name folder
-
-npm install
-
-npm run dev
-
-### URL
-Running in local:   http://127.0.0.1:5173/
+> [!CAUTION]
+> Running in local:   http://127.0.0.1:5173/
