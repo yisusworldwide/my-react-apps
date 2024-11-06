@@ -19,9 +19,9 @@ export default function navBar() {
           <Typography 
             variant="h5" 
             component="div" 
-            sx={{ flexGrow: 1, textAlign:"center", fontWeight: 'bold' }}
+            sx={{ flexGrow: 1, textAlign:"auto", fontWeight: 'bold' }}
           >
-            Todo List
+           Todo List
           </Typography>
         </Toolbar>
       </AppBar>
