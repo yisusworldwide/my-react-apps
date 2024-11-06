@@ -1,6 +1,7 @@
 import { AppBar, Box, Toolbar, Typography, IconButton} from '@mui/material';
 
 import InventorySharpIcon from '@mui/icons-material/InventorySharp';
+import EmojiObjectsTwoToneIcon from '@mui/icons-material/EmojiObjectsTwoTone';
 
 export default function navBar() {
   return (
@@ -12,7 +13,7 @@ export default function navBar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 1.5 }}
           >
             <InventorySharpIcon />
           </IconButton>
@@ -23,6 +24,15 @@ export default function navBar() {
           >
            Todo List
           </Typography>
+          <IconButton
+            size="large"
+            edge="end"
+            color="inherit"
+            aria-label= "menu"
+            sx={{ mr: -2 }}
+          >
+            <EmojiObjectsTwoToneIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>
