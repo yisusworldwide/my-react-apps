@@ -29,6 +29,7 @@ export default function navBar() {
             edge="end"
             color="inherit"
             aria-label= "menu"
+            style={{ color: "#ffc93c" }}
             sx={{ mr: -2 }}
           >
             <EmojiObjectsTwoToneIcon />
