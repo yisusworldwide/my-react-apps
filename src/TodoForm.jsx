@@ -21,10 +21,11 @@ export default function TodoForm ({ addTodo }){
         <ListItem>
             <form onSubmit={handleSubmit}>
                 <TextField 
-                    id="outlined-basic" 
-                    //we can define the label we like
+                    id="outlined-multiline-flexible"
                     label="New Todo..." 
-                    variant="outlined" 
+                    variant="outlined"
+                    multiline
+                    maxRows={6}
                     onChange={handleChange} 
                     value={text} 
                     InputProps = {{
