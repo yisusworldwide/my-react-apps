@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import {List, Box, Typography}  from '@mui/material';
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
+import BarIcon from "./BarIcon";
 
 //by this function we request the initial data, if any
 //we can erase all our entries in the form by "localStorage.clear()" in the console in Chrome
@@ -61,7 +62,7 @@ export default function TodoList(){
           m: 3,
       }}
       >
-        
+      <BarIcon /> 
       <Typography variant="h5" color="common.green" font="bold" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontFamily:'sans-serif', fontStyle: '' }}>
             Add, Check & Remove
       </Typography>
