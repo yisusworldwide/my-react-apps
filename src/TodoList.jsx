@@ -62,7 +62,7 @@ export default function TodoList(){
           m: 3,
       }}
       >
-      <BarIcon /> 
+      {/* <BarIcon />  */}
       <Typography variant="h5" color="common.green" font="bold" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontFamily:'sans-serif', fontStyle: '' }}>
             Add, Check & Remove
       </Typography>

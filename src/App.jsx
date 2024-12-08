@@ -5,27 +5,31 @@ import PropertyList from "./PropertyList";
 import CustomSvgIcon from "./CustomSvgIcon";
 import TodoList from "./TodoList";
 import NavBar from "./NavBar";
+import { Lumiflex } from "uvcanvas"
 
 function App() {
 
   return (
     <>
-      <section>
-        {/* <CustomSvgIcon /> */}
-        <NavBar />
-        
-        <TodoList />
-      </section>
-      
+      <div>
+        {/* <Lumiflex /> */}
+          <section>
+          
+            {/* <CustomSvgIcon /> */}
+            <NavBar />
+            
+            <TodoList />
+          </section>
+          
 
-      {/* <div>
-        <ScoreKeeper numPlayers={5} target={7} />
-      </div> */}
+          {/* <div>
+            <ScoreKeeper numPlayers={5} target={7} />
+          </div> */}
 
-      {/* <div>
-        <PropertyList properties={properties} />
-      </div> */}
-
+          {/* <div>
+            <PropertyList properties={properties} />
+          </div> */}
+      </div>
     </>
   );
 }
