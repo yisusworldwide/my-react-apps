@@ -75,3 +75,9 @@ button:focus-visible {
   top: 8px;
   right: 16px;
 }
+
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}

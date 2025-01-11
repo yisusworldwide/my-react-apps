@@ -62,9 +62,8 @@ export default function TodoList(){
           m: 3,
       }}
       >
-      {/* <BarIcon />  */}
-      <Typography className="rubik-vinyl-regular" variant="h5" color="common.green" component="div" sx={{ flexGrow: 1, mb:3, fontWeight: 'bold', fontFamily:'sans-serif', fontStyle: '' }}>
-            Add, Check & Remove
+      <Typography variant="h5" color="common.green" component="div" sx={{ flexGrow: 0.1, mb:3 }}>
+           <span className="rubik-vinyl-regular">Add, Check & Remove</span> 
       </Typography>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
 
