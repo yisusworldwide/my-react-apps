@@ -63,7 +63,7 @@ export default function TodoList(){
       }}
       >
       <Typography variant="h5" color="common.green" component="div" sx={{ flexGrow: 0.1, mb:3 }}>
-           <span className="rubik-vinyl-regular">Add, Check & Remove</span> 
+           <span className="chewy-regular">Add, Check & Remove</span> 
       </Typography>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
 
